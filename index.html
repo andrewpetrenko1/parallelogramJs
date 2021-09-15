@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <title>Document</title>
+</head>
+<body>
+  <canvas id="canvas"></canvas>
+  <div class="container">
+    <div class="d-flex justify-content-end m-2">
+      <div class="btn-group">
+        <input class="btn btn-danger" type="button" id="reset" value="Reset">
+        <input class="btn btn-info" type="button" id="about" value="About">
+      </div>
+    </div>
+    <div class="d-flex flex-column">
+      <div class="alert alert-primary">
+        <h6 id="parallel_area"></h6>
+      </div>
+      <div class="alert alert-warning">
+        <h6 id="circle_area"></h6>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modalAbout">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">About</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Click on the canvas 3 times to set 3 points. After you have selected the points, the program will build a parallelogram and a circle with the same area.</p>
+          <p>You can move the corners of the parallelogram by clicking on the red circles and move them.</p> 
+          <p>Click on the reset button to clear the canvas.</p> 
+          <p>Author: <b>Andrew Petrenko</b></p>
+          <p>Email: ndrwpetrenko@gmail.com</p>
+          <a href="https://t.me/andruui">Telegram</a>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
